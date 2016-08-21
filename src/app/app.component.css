@@ -1,0 +1,25 @@
+.align-droite {
+  flex: 1 1 auto;
+}
+.md-sidenav-side {
+  width: 200px;
+  background-color: #F4F5F7;
+}
+.toolbar{
+  position: fixed;
+  z-index: 10;
+}
+.sidebar{
+  min-height: 100%;
+}
+.sidenav{
+  margin-top:64px;
+}
+.content{
+  margin:10px;
+  margin-top:68px;
+}
+a.active:link{
+  background: rgba(0, 0, 0, 0.04);
+  display: block;
+}
