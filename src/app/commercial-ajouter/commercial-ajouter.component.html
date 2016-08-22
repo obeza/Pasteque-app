@@ -1,0 +1,38 @@
+<comp-content>
+  <md-toolbar class="toolbar">
+    <a routerLink="/commerciaux"><md-icon class="icon-ajouter">arrow_back</md-icon></a>
+  </md-toolbar>
+
+  <div class="ajouter-conteneur">
+  <md-toolbar color="warn">
+      <span>Ajouter un utilisateur</span>
+  </md-toolbar>
+
+  <form (ngSubmit)="formSubmit()">
+    <md-card>
+   <md-card-title></md-card-title>   
+   <md-card-content>
+        <md-input [(ngModel)]="dataForm.prenom" class="form-size100" id="prenom" name="prenom"  placeholder="prenom" type="prenom" required ></md-input>
+        <md-input [(ngModel)]="dataForm.nom" class="form-size100" id="nom" name="nom" placeholder="nom" type="nom" required ></md-input>
+
+        <md-input [(ngModel)]="dataForm.email" id="email" name="email"  class="form-size100" placeholder="Email" type="email" required></md-input>
+
+        <md-input [(ngModel)]="dataForm.passe" id="passe" name="passe"  class="form-size100" placeholder="passe" type="passe" required></md-input>
+
+
+        <md-radio-group [(ngModel)]="dataForm.statut" name="statut"> 
+          <md-radio-button value="commercial">commercial</md-radio-button>
+          <md-radio-button value="responsable">responsable</md-radio-button>
+        </md-radio-group>
+
+    </md-card-content>
+        
+   <md-card-actions>
+        <button md-raised-button class="form-size100" color="primary" type="submit">Ajouter</button>
+   </md-card-actions>
+</md-card>
+</form>
+
+  </div>
+
+</comp-content>

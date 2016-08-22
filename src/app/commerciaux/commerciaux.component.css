@@ -1,0 +1,12 @@
+.toolbar{
+    background-color: #fff;
+}
+.align-droite {
+  flex: 1 1 auto;
+}
+.icon-ajouter{
+    font-size:64px;
+    height: 64px;
+    width: 64px;
+    cursor:pointer;
+}

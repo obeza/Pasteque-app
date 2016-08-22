@@ -1,3 +1,5 @@
+<form (ngSubmit)="loginSubmit()"  autocomplete="off">
+
 <div class="conteneur">
   <md-toolbar color="warn">
       <span>Se connecter</span>
@@ -5,8 +7,10 @@
   <md-card>
     
     <md-card-content>
-        <md-input placeholder="Email" align="end" class="cent"></md-input>
-        <md-input placeholder="Mot de passe" align="end" class="cent"></md-input>
+      <div class="impossible" *ngIf="impossible">Votre e-mail ou votre mot de passe est incorrect, essayez de nouveau.</div>
+        <md-input [(ngModel)]="loginForm.email" id="email" name="email"  class="form-control" placeholder="Email" type="email" required class="cent"></md-input>
+        <md-input [(ngModel)]="loginForm.passe" id="passe" name="
+        passe"  class="form-control" placeholder="Mot de passe" type="password" required  class="cent"></md-input>
     </md-card-content>
 
     <md-card-actions class="droite">
@@ -15,3 +19,6 @@
     </md-card-actions>
   </md-card>
 </div>
+
+
+</form>

@@ -1,0 +1,19 @@
+<md-toolbar color="primary" class="toolbar">
+  <span>Pasteque new bar</span>
+  
+  <!-- This fills the remaining space of the current row -->
+  <span class="align-droite"></span>
+
+<div class="monmenu">
+        <button md-icon-button [md-menu-trigger-for]="menu">
+   <md-icon svgIcon>more_vert</md-icon>
+</button>
+ 
+<md-menu #menu="mdMenu" style="menu">
+    <button md-menu-item> Mes infos </button>
+    <button md-menu-item (click)="deconnexion()"> Se deconnecter </button>
+</md-menu>
+</div>
+
+</md-toolbar>
+

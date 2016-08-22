@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { routing } from './app.routing';
+import { HttpModule } from '@angular/http'; 
 
 // Material 
 import { MdToolbarModule } from '@angular2-material/toolbar';
@@ -12,16 +13,32 @@ import { MdCardModule } from '@angular2-material/card';
 import { MdButtonModule } from '@angular2-material/button';
 import { MdListModule } from '@angular2-material/list';
 import { MdInputModule } from '@angular2-material/input';
+import { MdMenuModule } from '@angular2-material/menu';
+import { MdIconModule } from '@angular2-material/icon';
+import { MdRadioModule } from '@angular2-material/radio';
 
 // mes pages
 import { LoginComponent } from './login/login.component';
 import { AccueilComponent } from './accueil/accueil.component';
+import { RestService } from './services/rest.service';
+import { TopbarComponent } from './components/topbar/topbar.component';
+import { CommerciauxComponent } from './commerciaux/commerciaux.component';
+import { SidenavComponent } from './components/sidenav/sidenav.component';
+import { ContentComponent } from './components/content/content.component';
+import { Content } from './directives/content.directive';
+import { CommercialAjouterComponent } from './commercial-ajouter/commercial-ajouter.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    AccueilComponent
+    AccueilComponent,
+    TopbarComponent,
+    CommerciauxComponent,
+    SidenavComponent,
+    ContentComponent,
+    Content,
+    CommercialAjouterComponent
   ],
   imports: [
     BrowserModule,
@@ -33,9 +50,13 @@ import { AccueilComponent } from './accueil/accueil.component';
     MdCardModule,
     MdButtonModule,
     MdListModule,
-    MdInputModule
+    MdInputModule,
+    HttpModule,
+    MdMenuModule,
+    MdIconModule,
+    MdRadioModule
   ],
-  providers: [],
+  providers: [ RestService ],
   entryComponents: [AppComponent],
   bootstrap: [AppComponent]
 })

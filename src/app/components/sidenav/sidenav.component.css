@@ -1,0 +1,32 @@
+.sidenav {
+  background-color: #575F72;
+  display: block;
+}
+
+.sidebar{
+  min-height: 100%;
+}
+.sidenav{
+  margin-top:64px;
+}
+.liennav{
+    padding:8px;
+     display:block;
+     font-weight: bold;
+     text-decoration: none;
+}
+a.active:link{
+    background: #4F5467;
+   
+}
+a:link{
+    color:#fff;
+    height: 48px;
+}
+a:visited {
+    color: #fff;
+    height: 48px;
+}
+a:hover {
+    background: #4F5467;
+}

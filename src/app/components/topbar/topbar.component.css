@@ -1,0 +1,7 @@
+.align-droite {
+  flex: 1 1 auto;
+}
+.toolbar{
+  position: fixed;
+  z-index: 10;
+}

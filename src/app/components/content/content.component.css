@@ -1,0 +1,23 @@
+.content{
+  margin:10px;
+  margin-top:68px;
+}
+.content-col{
+    background-color: #EFF3F6;
+}
+.align-droite {
+  flex: 1 1 auto;
+}
+
+.sidenav-col{
+    background:#575F72;
+    display: table-cell;
+    padding-left:0;
+    padding-right:0;
+}
+.container-pasteque{
+  height: 100%;
+  padding-left: 0;
+  padding-right: 0;
+  
+}
