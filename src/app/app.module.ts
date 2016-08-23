@@ -17,6 +17,9 @@ import { MdMenuModule } from '@angular2-material/menu';
 import { MdIconModule } from '@angular2-material/icon';
 import { MdRadioModule } from '@angular2-material/radio';
 
+// autres components
+import { SimpleNotificationsModule } from 'angular2-notifications';
+
 // mes pages
 import { LoginComponent } from './login/login.component';
 import { AccueilComponent } from './accueil/accueil.component';
@@ -27,6 +30,7 @@ import { SidenavComponent } from './components/sidenav/sidenav.component';
 import { ContentComponent } from './components/content/content.component';
 import { Content } from './directives/content.directive';
 import { CommercialAjouterComponent } from './commercial-ajouter/commercial-ajouter.component';
+import { NotifOptionsService } from './services/notif-options.service';
 
 @NgModule({
   declarations: [
@@ -54,9 +58,10 @@ import { CommercialAjouterComponent } from './commercial-ajouter/commercial-ajou
     HttpModule,
     MdMenuModule,
     MdIconModule,
-    MdRadioModule
+    MdRadioModule,
+    SimpleNotificationsModule
   ],
-  providers: [ RestService ],
+  providers: [ RestService, NotifOptionsService ],
   entryComponents: [AppComponent],
   bootstrap: [AppComponent]
 })

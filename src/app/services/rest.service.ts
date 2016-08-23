@@ -20,8 +20,9 @@ export class RestService {
     return  this.http.get( url ).map( res => res.json() );
   }
 
-  get(id){
-    return  this.http.get( this.apiLien + "sondages.php" + "/" +id )
+  get(dossier, id){
+    let url = this.apiLien + dossier + id ;
+    return  this.http.get( url )
       .map( res => res.json() );
   }
 

@@ -10,3 +10,6 @@
     width: 64px;
     cursor:pointer;
 }
+.icon-align {
+    vertical-align:middle;
+}

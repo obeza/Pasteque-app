@@ -8,6 +8,22 @@
         <i class="fa fa- fa-spin fa-3x fa-fw"></i>
         <h1>liste des commerciaux</h1>
 
+        <div class="row">
+          <div class="col-sm-12 col-md-3" *ngFor="let commercial of commerciaux">
+
+            <div class="thumbnail" >
+              <div class="caption">
+                <h3>{{ commercial.prenom }} {{ commercial.nom }}</h3>
+                <p><i class="material-icons icon-align">email</i> {{ commercial.email }}</p>
+                <p>chiffre d'affaire : xxx €</p>
+                <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+              </div>
+            </div>
+
+          </div> <!-- fin col -->
+        </div> <!-- fin row -->
+
+
 </comp-content>
 
 
