@@ -27,13 +27,13 @@ export class CommercialAjouterComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.notifOptions = this._notifOptions.optionsNotif.options;
+    this.notifOptions = this._notifOptions.options.options;
     
   }
 
   formSubmit(){
     console.log(JSON.stringify(this.dataForm));
-    this._notifService.html( this._notifOptions.optionsNotif.htmlSauvegarde , "hello", {timeOut:0});
+    this._notifService.html( this._notifOptions.options.htmlSauvegarde , "hello", {timeOut:0});
 
     
     this._rest.post('utilisateur', this.dataForm).then(

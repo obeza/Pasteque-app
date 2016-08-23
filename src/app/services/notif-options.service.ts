@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 @Injectable()
 export class NotifOptionsService {
 
-   public optionsNotif = {
+   public options = {
      htmlSauvegarde : '<div class="hello">Sauvegarde en cours...</div>',
      options:
      {
@@ -24,11 +24,6 @@ export class NotifOptionsService {
     
 
   constructor() { }
-
-  public options(){
-    console.log("options chargées...");
-    return this.optionsNotif;
-  }
 
 
 
