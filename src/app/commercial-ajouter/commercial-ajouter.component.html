@@ -1,4 +1,3 @@
-<simple-notifications [options]="notifOptions"></simple-notifications>
 
 <comp-content>
   <md-toolbar class="toolbar">
@@ -9,6 +8,8 @@
   <md-toolbar color="warn">
       <span>Ajouter un utilisateur</span>
   </md-toolbar>
+
+<button (click)="formSubmit()"  md-raised-button class="form-size100" color="primary" type="submit">Ajouter</button>
 
   <form (ngSubmit)="formSubmit()">
     <md-card>
@@ -36,5 +37,8 @@
 </form>
 
   </div>
+
+
+
 
 </comp-content>
